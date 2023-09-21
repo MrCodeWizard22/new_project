@@ -1,0 +1,662 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #A5D6A7;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+
+.menu-icon {
+    font-size: 24px; 
+    color: #fff;
+    margin-right: 10px; 
+    cursor: pointer; 
+}
+
+/* navbar */
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Hero Section */
+/* .hero {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+/* Resources Section */
+/* .resources {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.resource-card {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+}
+
+.resource-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    font-size: 16px;
+} */
+
+
+
+.consultant-list {
+    list-style: none;
+    padding: 0;
+}
+
+.consultant-list li {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.consultant-list h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.consultant-list p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+ /* media querries yeaah */
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        z-index: 1;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+        display: block;
+    }
+}
+
+
+/* i added more css and don't have time to fix it so i made saperate multiple times  */
+
+.consultant-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.consultant-list li:hover {
+    transform: scale(1.03);
+}
+
+/* Updated button styles */
+.contact-button {
+    background: linear-gradient(to bottom, #007BFF, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    background: linear-gradient(to bottom, #0056b3, #007BFF);
+}
+
+
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Resources Section */
+        .resources {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .resource-card {
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .resource-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .resource-card p {
+            font-size: 16px;
+        }
+        /*more CSS styles for the "resources" section */
+
+.resources {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.resource-card {
+    flex-basis: calc(33.33% - 20px); 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.resource-card p {
+    font-size: 16px;
+    color: #666;
+}
+/* CSS styles for the "resources" section */
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.resource-card {
+    flex-basis: calc(33.33% - 20px); 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.resource-card p {
+    font-size: 16px;
+    color: #666; 
+}
+
+/* Media query smaller than 768px */
+@media screen and (max-width: 768px) {
+    .resource-card {
+        flex-basis: calc(50% - 20px); 
+    }
+}
+
+/* Media query  smaller than 480px */
+@media screen and (max-width: 480px) {
+    .resource-card {
+        flex-basis: 100%; 
+    }
+}
+
+
+        /* crisis' css  */
+        /* Immediate Support Styles */
+        .crisis-support {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .crisis-support h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .crisis-support p {
+            font-size: 18px;
+        }
+        
+        .crisis-support a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+/* Interactive Self-Assessment Styles */
+.self-assessment {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.self-assessment h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.self-assessment p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.self-assessment button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Mindfulness and Relaxation Styles */
+.mindfulness {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.mindfulness h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.mindfulness p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.mindfulness ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mindfulness li {
+    margin: 10px 0;
+}
+
+.mindfulness a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* adding more and more css and i will manage all this  */
+/* CSS styles for the "hero" section */
+
+.hero {
+    background-image: url('image1.avif'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+/*more good  CSS styles for the "crisis-support" section */
+.crisis-support {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.crisis-support h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.crisis-support p {
+    font-size: 18px;
+    color: #555; 
+    margin-bottom: 15px;
+}
+
+.crisis-support a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.crisis-support a:hover {
+    text-decoration: underline;
+}
+
+/*more   CSS styles for the "self-assessment" section */
+.self-assessment {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.self-assessment h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+.self-assessment p {
+    font-size: 18px;
+    color: #555; 
+    margin-bottom: 20px;
+}
+
+#start-assessment {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#start-assessment:hover {
+    background-color: #0056b3; 
+}
+
+/* CSS styles for the "mindfulness" section */
+.mindfulness {
+    margin-top: 30px;
+}
+
+.mindfulness h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+.mindfulness p {
+    font-size: 18px;
+    color: #555; 
+    margin-bottom: 20px;
+}
+
+.mindfulness ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mindfulness ul li {
+    margin-bottom: 10px;
+}
+
+.mindfulness ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mindfulness ul li a:hover {
+    text-decoration: underline; 
+}
+
+
+/* CSS styles for the footer */
+
+/* CSS styles for the footer */
+
+footer {
+    background-color:#D5DBDB; /* Footer background color */
+    color: #fff; /* Text color */
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff; /* Link text color */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: #ffdd33; /* Link text color on hover */
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #fff; /* Social icon text color */
+    text-decoration: none;
+    background-color: #0056b3; /* Social icon background color */
+    border-radius: 50%; /* Make it circular */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    background-color: #004999; /* Darker shade on hover */
+    color: #ffdd33; /* Icon color on hover */
+}

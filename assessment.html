@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+    <link rel="stylesheet" href="assessment.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Mental Health Hub</h1>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Find a Consultant</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="assessment.html">Assessment</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Mental Health Assessment</h2>
+        <p>Please answer the following questions to assess your mental health.</p>
+        <form id="assessment-form">
+            <div class="question">
+                <label>1. Do you often feel sad or hopeless?</label>
+                <label>
+                    <input type="radio" name="q1" value="yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="no"> No
+                </label>
+            </div>
+
+            <div class="question">
+                <label>2. Do you have trouble concentrating or making decisions?</label>
+                <label>
+                    <input type="radio" name="q2" value="yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="no"> No
+                </label>
+            </div>
+
+            <div class="question">
+                <label>3. Have you lost interest or pleasure in things you used to enjoy?</label>
+                <label>
+                    <input type="radio" name="q3" value="yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="no"> No
+                </label>
+            </div>
+
+            <div class="question">
+                <label>4. Do you often feel fatigued or lack energy?</label>
+                <label>
+                    <input type="radio" name="q4" value="yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="no"> No
+                </label>
+            </div>
+
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="assessment-result">
+        </div>
+    </div>
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function () {
+           
+            const q1Response = document.querySelector('input[name="q1"]:checked');
+            const q2Response = document.querySelector('input[name="q2"]:checked');
+            
+            
+            let result = "You may be experiencing some stress.";
+
+            if (q1Response && q1Response.value === "yes") {
+                result = "You may be experiencing symptoms of depression. It's important to seek help.";
+            }
+
+            if (q2Response && q2Response.value === "yes") {
+                result += " You may also have trouble with concentration.";
+            }
+            // if
+
+            document.getElementById('assessment-result').textContent = result;
+        });
+    </script>
+</body>
+</html>

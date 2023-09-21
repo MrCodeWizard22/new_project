@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Hub</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        
+        <h1>Mental Health Hub</h1>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Find a Consultant</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li> 
+            <li><a href="#">Sign Up</a></li> 
+            <li><a href="assessment.html">Assessment</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="search" name="search" placeholder="Search by name, specialty, or location">
+            <button type="submit">Search</button>
+        </div>
+        <div class="hero">
+            <h2>Welcome to Mental Health Hub - Your Safe Haven</h2>
+            <p>Your Journey to Wellness Starts Here</p>
+            <button class="cta-button">Start Your Wellness Journey</button>
+        </div>
+        <div class="resources">
+            <div class="resource-card">
+                <h3>Understanding Depression</h3>
+                <p>Explore information about depression and its symptoms.</p>
+            </div>
+            <div class="resource-card">
+                <h3>Coping Strategies</h3>
+                <p>Learn effective coping strategies for managing stress and anxiety.</p>
+            </div>
+            <div class="resource-card">
+                <h3>Meditation & Relaxation</h3>
+                <p>Discover mindfulness and relaxation techniques for a calm mind.</p>
+            </div>
+        </div>
+        
+        <div class="crisis-support">
+            <h3>If you need immediate support:</h3>
+            <p>Call our 24/7 Crisis Helpline at <a href="#">123-456-7890</a></p>
+            <p>Or chat with a counselor now <a href="#">Chat Now</a></p>
+        </div>
+
+        <div class="self-assessment">
+            <h2>Assess Your Mental Health</h2>
+            <p>Take our confidential assessment to better understand your mental health.</p>
+            <button id="start-assessment">Start Assessment</button>
+        </div>
+        
+        <div class="mindfulness">
+            <h2>Mindfulness and Relaxation</h2>
+            <p>Explore mindfulness exercises, relaxation techniques, and guided meditations.</p>
+            <ul>
+                <li><a href="#">Mindfulness Exercises</a></li>
+                <li><a href="#">Relaxation Techniques</a></li>
+                <li><a href="#">Guided Meditations</a></li>
+            </ul>
+        <ul class="consultant-list">
+            <li>
+                <h4>Dr. xyz</h4>
+                <p>Specialty: Clinical Psychology</p>
+                <p>Location: abc</p>
+                <button class="contact-button">Contact</button>
+            </li>
+            <li>
+                <h4>Dr. xyz</h4>
+                <p>Specialty: Cognitive-Behavioral Therapy</p>
+                <p>Location: abc</p>
+                <button class="contact-button">Contact</button>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </footer>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navList = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
