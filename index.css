@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: #A5D6A7;
+    background-color:  #201962;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -382,7 +382,7 @@ nav a {
 
 
         /* crisis' css  */
-        /* Immediate Support Styles */
+        
         .crisis-support {
             background-color: #f7f7f7;
             padding: 20px;
@@ -611,8 +611,8 @@ nav a {
 /* CSS styles for the footer */
 
 footer {
-    background-color:#D5DBDB; /* Footer background color */
-    color: #fff; /* Text color */
+    background-color:#D5DBDB;
+    color: #fff;
     padding: 40px 0;
     text-align: center;
 }
@@ -630,14 +630,14 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #fff; /* Link text color */
+    color: #fff; 
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease-in-out;
 }
 
 footer ul li a:hover {
-    color: #ffdd33; /* Link text color on hover */
+    color: #526c19;
 }
 
 .social-media {
@@ -649,14 +649,14 @@ footer ul li a:hover {
     margin: 0 15px;
     padding: 10px 15px;
     font-size: 20px;
-    color: #fff; /* Social icon text color */
+    color: #fff; 
     text-decoration: none;
-    background-color: #0056b3; /* Social icon background color */
-    border-radius: 50%; /* Make it circular */
+    background-color: #0056b3; 
+    border-radius: 50%; 
     transition: background-color 0.3s ease-in-out;
 }
 
 .social-icon:hover {
-    background-color: #004999; /* Darker shade on hover */
-    color: #ffdd33; /* Icon color on hover */
+    background-color: #004999; 
+    color: #ffdd33;
 }
