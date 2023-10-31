@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #team {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.team-members li {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.team-members li:hover {
+    transform: translateY(-5px);
+}
+
+.team-members img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-members h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-members p {
+    font-size: 16px;
+    color: #666;
+}
+
+header {
+    background-color:  #201962;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+
+.menu-icon {
+    font-size: 24px; 
+    color: #fff;
+    margin-right: 10px; 
+    cursor: pointer; 
+}
+
+/* navbar */
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>Health Center</h1>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Find a Consultant</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li> 
+            <li><a href="#">Sign Up</a></li> 
+            <!-- <li><a href="assessment.html">Assessment</a></li> -->
+        </ul>
+    </nav>
+    <section id="team">
+        <div class="container">
+            <h2>Meet the Team</h2>
+            <ul class="team-members">
+                <li>
+                    <img src="team-member1.jpg" alt="Dr. Jane Doe">
+                    <h3>Dr. Jane Doe</h3>
+                    <p>Clinical Psychologist</p>
+                </li>
+                <li>
+                    <img src="team-member2.jpg" alt="Dr. John Smith">
+                    <h3>Dr. John Smith</h3>
+                    <p>Counselor</p>
+                </li>
+                <!-- Add more team members as needed -->
+            </ul>
+        </div>
+    </section>
+    
+</body>
+</html>

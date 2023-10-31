@@ -132,10 +132,10 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* 
 .login-form {
     /* display: none; */
-}
+} */
 
 .signup-form {
     display: block;
